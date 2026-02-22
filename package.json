@@ -1,13 +1,31 @@
 {
   "name": "traffic-simulator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Terminal-based traffic signal control simulator using Node.js TCP socket server",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "start:debug": "DEBUG=true node server.js",
+    "demo": "node demo.js",
+    "example:1": "node examples.js 1",
+    "example:2": "node examples.js 2",
+    "example:3": "node examples.js 3",
+    "example:4": "node examples.js 4",
+    "example:5": "node examples.js 5",
+    "client:simulator": "node CameraSimulator.js",
+    "client:subscriber": "node SignalSubscriber.js"
   },
-  "keywords": [],
+  "keywords": [
+    "traffic-signal",
+    "simulator",
+    "tcp-server",
+    "traffic-control",
+    "node.js",
+    "terminal"
+  ],
   "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.17.1"
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
 }
